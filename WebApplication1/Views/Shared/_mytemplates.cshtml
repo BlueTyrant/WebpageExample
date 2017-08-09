@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CAREY LEGAL</title>
+
+    @* Template Header Files *@
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/Content/mytemplates/css/datatable.css">
+    <link rel="stylesheet" href="@Url.Content("~/Content/mytemplates/")css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="@Url.Content("~/Content/mytemplates/")css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+
+    <link href='@Url.Content("~/Content/mytemplates/")http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link href='@Url.Content("~/Content/mytemplates/")http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <link href="@Url.Content("~/Content/mytemplates/")css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="@Url.Content("~/Content/mytemplates/")css/main.css">
+    <script src="@Url.Content("~/Content/mytemplates/")js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="bg-overlay"></div>
+        <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="ion-navicon"></i>
+                    </button>
+                    <a class="navbar-brand" href="#"><h2>CAREY LEGAL HELP</h2></a>
+                </div><!-- navbar-header -->
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#story">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                    </ul>
+                    <div class="container text-center">
+                        <button id="Dashboard-button" type="button" class="btn btn-primary" href="~/Views/Home/Dashboard.cshtml">Dashboard</button>
+                        @*<input id="Dashboard-button" type="submit" class="btn btn-primary" value="DashBoard">*@
+                    </div>
+                    </div><!--/.navbar-collapse -->
+            </div><!-- container -->
+        </div><!-- menu -->
+        <div class="center text-right">
+            <div class="container">
+                <div class="banner">
+                    <h2 class="condensed">Your Voice</h2>
+                    <h2 class="condensed">Problems Solved</h2>
+                    <h2 class="condensed">Justice</h2>
+                </div>
+                <div class="subtitle"><h5>Keep calm and call Us</h5></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="text-right container hidden-xs"><a id="scrollDownArrow" href="#"><i class="ion-ios7-arrow-thin-down"></i></a></div>
+            <div class="signupForm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <b class="mb10">The Pilates Method of Body Conditioning develops the body uniformly, invigorates the mind and elevates the spirit.</b>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            @*<form class="form-inline subscribe-form" id="subscription-form" role="form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="subscriber-name">Full Name</label>
+                                    <input name="name" type="text" class="form-control" id="subscriber-name" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="subscriber-email">Email address</label>
+                                    <input name="email" type="email" class="form-control" id="subscriber-email" placeholder="Your Email">
+                                </div>
+                                <input id="subscribe-button" type="submit" class="btn btn-primary" value="Get it!">
+                            </form>*@
+                            <!-- SUCCESS OR ERROR MESSAGES -->
+                            <div id="subscription-response"></div>
+                        </div>
+                    </div>
+                </div><!-- container -->
+            </div><!--/signupForm-->
+        </div>
+    </div>
+    <!-- /#header -->
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer id="footer" class="dark-wrapper">
+        <div class="container inner">
+            <div class="row">
+                <div class="col-sm-4">
+                    &copy; Copyright Carey Legal Help 2017
+                    @*<br />Theme By <a class="themeBy" href="http://www.Themewagon.com">ThemeWagon</a>*@
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        @*<li><a href="#">Lorem Ipsum</a></li>*@
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="social-bar">
+                        <a href="#" data-toggle="tooltip" class="ion-social-twitter tooltipped" title="Twitter"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-youtube tooltipped" title="Youtube"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-vimeo tooltipped" title="Vimeo"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-facebook tooltipped" title="Facebook"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-pinterest tooltipped" title="Pinterest"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-googleplus tooltipped" title="Google-Plus"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="@Url.Content("~/Content/mytemplates/")js/jquery-2.1.3.min.js"></script>
+    <script>window.jQuery || document.write('<script src="@Url.Content("~/Content/mytemplates/")js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="@Url.Content("~/Content/mytemplates/")js/jquery.actual.min.js"></script>
+    <script src="@Url.Content("~/Content/mytemplates/")js/jquery.scrollTo.min.js"></script>
+    <script src="@Url.Content("~/Content/mytemplates/")js/vendor/bootstrap.min.js"></script>
+    <script src="@Url.Content("~/Content/mytemplates/")js/main.js"></script>
+    <script src="~/Content/mytemplates/js/datatable.js"></script>
+</body>
+</html>
